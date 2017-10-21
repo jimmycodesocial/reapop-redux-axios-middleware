@@ -1,0 +1,52 @@
+{
+  "name": "reapop-redux-axios-middleware",
+  "version": "0.5.0",
+  "description": "Redux middleware to trigger reapop's notifications from axios actions.",
+  "keywords": [
+    "redux",
+    "redux-middleware",
+    "axios",
+    "reapop",
+    "notifications",
+    "notification"
+  ],
+  "author": "JimmyCode Social <hi@jimmycode.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/jimmycodesocial/reapop-redux-axios-middleware#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimmycodesocial/reapop-redux-axios-middleware.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jimmycodesocial/reapop-redux-axios-middleware/issues"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "prepublish": "npm run lint && npm run build",
+    "build": "webpack",
+    "lint": "eslint -c .eslintrc src",
+    "test": "mocha --compilers js:babel-register --require ./test/helper.js test/*.js"
+  },
+  "peerDependencies": {
+    "redux-axios-middleware": "~4.0.0",
+    "reapop": "~1.1.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "chai-shallow-deep-equal": "^1.4.6",
+    "eslint": "^4.9.0",
+    "mocha": "^4.0.1",
+    "sinon": "^4.0.1",
+    "webpack": "^3.8.1"
+  }
+}
