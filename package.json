@@ -45,6 +45,7 @@
     "chai": "^4.1.2",
     "chai-shallow-deep-equal": "^1.4.6",
     "eslint": "^4.9.0",
+    "eslint-plugin-import": "^2.8.0",
     "mocha": "^4.0.1",
     "sinon": "^4.0.1",
     "webpack": "^3.8.1"
