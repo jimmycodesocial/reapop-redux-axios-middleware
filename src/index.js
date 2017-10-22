@@ -4,6 +4,7 @@
 
 'use strict';
 
-export {
-  reapopAxiosMiddleware
-} from './middleware';
+import reapopAxiosMiddleware from './middleware';
+
+export default reapopAxiosMiddleware;
+
