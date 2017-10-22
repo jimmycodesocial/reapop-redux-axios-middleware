@@ -5,5 +5,5 @@
 'use strict';
 
 export {
-  default
+  reapopAxiosMiddleware
 } from './middleware';
