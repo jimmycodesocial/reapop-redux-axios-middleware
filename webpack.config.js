@@ -6,6 +6,7 @@
 
 const webpack = require('webpack');
 const path = require('path');
+const PeerDepsExternalsPlugin = require('peer-deps-externals-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -15,12 +16,25 @@ module.exports = {
     library: 'ReapopReduxAxiosMiddleware',
     libraryTarget: 'umd'
   },
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify('production')
+      }
+    }),
+    new PeerDepsExternalsPlugin(),
+    new webpack.optimize.UglifyJsPlugin({
+      compressor: {
+        warnings: false
+      }
+    })
+  ],
   module: {
     rules: [
       {
         test: /\.js$/,
-        exclude: /(node_modules)/,
-        loader: 'babel-loader'
+        loader: 'babel-loader',
+        include: path.join(__dirname, 'src'),
       }
     ]
   }

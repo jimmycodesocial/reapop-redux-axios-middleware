@@ -28,13 +28,14 @@
     "test": "mocha --compilers js:babel-register --require ./test/helper.js test/*.js"
   },
   "peerDependencies": {
+    "lodash": "^4.17.4",
     "redux-axios-middleware": "~4.0.0",
-    "reapop": "~1.1.3"
-  },
-  "dependencies": {
-    "lodash": "^4.17.4"
+    "reapop": "~1.1.3",
+    "react": "^15.4.0 || ^16.0.0",
+    "react-dom": "^15.4.0 || ^16.0.0"
   },
   "devDependencies": {
+    "axios": "^0.17.0",
     "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
@@ -46,7 +47,9 @@
     "chai-shallow-deep-equal": "^1.4.6",
     "eslint": "^4.9.0",
     "eslint-plugin-import": "^2.8.0",
+    "lodash": "^4.17.4",
     "mocha": "^4.0.1",
+    "peer-deps-externals-webpack-plugin": "^1.0.2",
     "react": "^15.4.0 || ^16.0.0",
     "react-dom": "^15.4.0 || ^16.0.0",
     "react-redux": "^5.0.6",
