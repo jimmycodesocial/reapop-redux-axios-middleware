@@ -7,7 +7,7 @@ Redux middleware to trigger reapop's notifications from axios actions.
 This module allows you to dispatch notifications from [axios actions](https://github.com/svrcekmichal/redux-axios-middleware) using [reapop](https://github.com/LouisBarranqueiro/reapop).
 
 ## Installation
-Fist, install redux-axios-middleware and reapop. Then:
+First, install redux-axios-middleware and reapop. Then:
 ```
 npm i -S reapop-redux-axios-middleware
 ```
